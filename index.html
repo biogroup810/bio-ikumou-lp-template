@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>薬なしで、育毛が叶う。｜{{CLINIC_NAME}}（育毛治療院）</title>
+  <meta name="description" content="{{CITY}}で今話題の育毛整体。内服薬なし・外用薬なしで、髪が育つ“土台”から根本改善。国家資格保持者によるマンツーマン施術。このページ限定・初回2,980円（税込）。カウンセリング＋頭皮診断＋育毛施術。" />
+
+  <!--
+    IMAGES
+    ======
+    写真は images/bio/ の相対パスを参照しています（Figmaの egress 制限のため実画像は未配置）。
+    必要な画像ファイル名の一覧は README.md「画像マニフェスト」を参照してください。
+    ファイルを images/bio/ に置くと、プレースホルダーが自動で置き換わります。
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==== hidden SVG symbols ==== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></symbol>
+    <symbol id="i-follicle" viewBox="0 0 60 80"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 26H20c2 18 4 34 10 34s8-16 10-34h16"/><path d="M30 58c0-18 0-36 0-52" stroke-width="3"/></g></symbol>
+  </svg>
+
+  <div class="page">
+
+    <!-- ======================= Header ======================= -->
+    <header class="site-header">
+      <div>
+        <span class="site-header__name">{{CLINIC_NAME}}</span>
+        <span class="site-header__sub">ITSUMO IKUMOU ─ 育毛治療院</span>
+      </div>
+      <a class="btn-line btn-line--sm js-line" href="#">LINEで予約</a>
+    </header>
+
+    <!-- ======================= Hero ======================= -->
+    <section class="hero">
+      <p class="hero__tag">＼ {{CITY}}で今話題の育毛整体 ／</p>
+      <h1 class="hero__title">
+        <span class="l1"><b>薬なし</b>で、</span>
+        <span class="l2">育毛が叶う。</span>
+      </h1>
+      <p class="hero__sub">なぜ？内服薬なし・外用薬なしで、<br>こんなにも髪が育つ“土台”から変わるのか？</p>
+      <p class="hero__catch">
+        あなたも当院で、<br>
+        <span class="u">人生最後の育毛</span><br>
+        にしませんか？
+      </p>
+      <div class="hero__visual ph" data-ph="メインビジュアル｜施術風景の写真">
+        <img src="images/bio/hero-main.png" alt="薬に頼らない育毛整体の施術風景" onerror="this.remove()">
+      </div>
+      <p class="hero__note">※効果を保証するものではございません。</p>
+    </section>
+
+    <!-- ======================= Trust + price ======================= -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-card">
+            <img class="ico" src="images/bio/drug.png" alt="薬は一切なし" onerror="this.style.display='none'">
+            <b>薬は一切なし</b><span>内服も外用も不要</span>
+          </div>
+          <div class="trust-card">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4M9 15l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <b>完全予約制</b><span>プライベート空間</span>
+          </div>
+          <div class="trust-card">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <b>{{ACCESS_SHORT}}</b><span>{{PARKING_BADGE}}</span>
+          </div>
+        </div>
+
+        <div class="price-card">
+          <span class="price-limit"><i>＼</i>このページ限定<i>／</i></span>
+          <p class="price-menu">カウンセリング ＋ 頭皮診断 ＋ 育毛施術</p>
+          <p class="price-value">
+            <span class="lbl">初回</span>
+            <span class="num">2,980</span>
+            <span class="yen">円</span>
+            <span class="tax">税込</span>
+          </p>
+        </div>
+
+        <p class="tap-hint">↓ タップで予約できます ↓</p>
+        <a class="btn-line js-line" href="#">LINEで予約する <span class="arw">›</span></a>
+      </div>
+    </section>
+
+    <!-- ======================= CHECK ======================= -->
+    <section class="section bg-cream">
+      <div class="container">
+        <p class="eyebrow">CHECK</p>
+        <h2 class="sec-title">{{CITY}}にお住まいで<br>薄毛・抜け毛が気になる方へ<br><span class="gold">こんなお悩み、ありませんか？</span></h2>
+        <hr class="gold-line">
+        <ul class="check-list">
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>なんとなく、髪全体に元気がない</li>
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>抜け毛が増えてきた気がする</li>
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>濡れると、生え際や分け目が目立つ</li>
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>気づいたら、進んでしまっていた…</li>
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>育毛剤を使っても、実感がなかった</li>
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>薬の副作用が不安で続けられない</li>
+        </ul>
+        <p class="callout">髪の変化はゆっくり進みます。<br>だからこそ、<span class="em">早くケアを始めた方ほど</span><br>結果が出やすいのです！</p>
+      </div>
+    </section>
+
+    <!-- ======================= 諦めずに（navy） ======================= -->
+    <section class="section bg-navy">
+      <div class="container emph">
+        <h2 class="emph__title">そのお悩み、諦めずに<br>当院にお任せください！</h2>
+        <hr class="gold-line">
+        <p class="emph__sub">あなたも薬に頼らず、<br><span class="big">「髪が育つ土台」</span><br>を取り戻しませんか？</p>
+      </div>
+    </section>
+
+    <!-- ======================= CONCEPT ======================= -->
+    <section class="section bg-white">
+      <div class="container">
+        <p class="eyebrow">CONCEPT</p>
+        <h2 class="sec-title">体の内側から整え、<br>髪が育つ土台をつくる</h2>
+        <hr class="gold-line">
+        <p class="sec-lead">頭皮（外側）と自律神経（内側）の両面から<br>アプローチ</p>
+
+        <div class="follicle-band">
+          <img class="follicle-band__img" src="images/bio/concept-band.png" alt="頭皮（外側）と自律神経（内側）の図" onerror="this.style.display='none'">
+        </div>
+
+        <div class="oi-grid">
+          <div class="oi-card">
+            <span class="oi-tag">OUTSIDE</span>
+            <img class="oi-ico" src="images/bio/outside.png" alt="頭皮への直接アプローチ" onerror="this.style.display='none'">
+            <b>頭皮への<br>直接アプローチ</b>
+            <p>微弱電流とヒト幹細胞ケアで、頭皮環境そのものを立て直します。</p>
+          </div>
+          <div class="oi-card">
+            <span class="oi-tag">INSIDE</span>
+            <img class="oi-ico" src="images/bio/inside.png" alt="自律神経を整える整体">
+            <b>自律神経を<br>整える整体</b>
+            <p>血流やホルモンの巡りに関わる自律神経を、整体でやさしく調整します。</p>
+          </div>
+        </div>
+
+        <p class="concept-foot">幹細胞培養液 × 整体施術で、<br>薄毛・抜け毛の原因から<br><span class="stamp">根本改善</span></p>
+      </div>
+    </section>
+
+    <!-- ======================= RESULTS ======================= -->
+    <section class="section bg-cream">
+      <div class="container">
+        <p class="eyebrow">RESULTS</p>
+        <h2 class="sec-title">施術実績 <span class="gold">5,000</span> 件超<br>「まだあきらめたくない」方に<br>選ばれています</h2>
+        <hr class="gold-line">
+        <p class="sec-lead">ビフォーアフター＆喜びの声 ↓↓↓</p>
+
+        <div class="ba-list">
+          <!-- card 1 -->
+          <article class="ba-card">
+            <h3 class="ba-card__title">分け目の地肌が気にならなくなった！</h3>
+            <p class="ba-card__meta">20代 男性 ／ 施術期間 4ヶ月</p>
+            <div class="ba-photos">
+              <div class="ba-photo is-before ph" data-ph="BEFORE"><img src="images/bio/ba1-before.png" alt="施術前（分け目）" onerror="this.remove()"></div>
+              <div class="ba-arrow">→</div>
+              <div class="ba-photo is-after ph" data-ph="AFTER"><img src="images/bio/ba1-after.png" alt="施術後（分け目）" onerror="this.remove()"></div>
+            </div>
+            <div class="ba-tags"><span>分け目 改善</span><span>抜け毛 減少</span><span>ハリUP</span></div>
+            <p class="ba-card__text">若いうちから薄毛が気になっていましたが、4ヶ月で地肌が目立たなくなり、自信が持てました。</p>
+            <p class="ba-card__note">※個人の感想であり効果を保証するものではありません。</p>
+          </article>
+          <!-- card 2 -->
+          <article class="ba-card">
+            <h3 class="ba-card__title">抜け毛が減ったのを実感！</h3>
+            <p class="ba-card__meta">30代 男性 ／ 施術期間 6ヶ月</p>
+            <div class="ba-photos">
+              <div class="ba-photo is-before ph" data-ph="BEFORE"><img src="images/bio/ba2-before.png" alt="施術前" onerror="this.remove()"></div>
+              <div class="ba-arrow">→</div>
+              <div class="ba-photo is-after ph" data-ph="AFTER"><img src="images/bio/ba2-after.png" alt="施術後" onerror="this.remove()"></div>
+            </div>
+            <div class="ba-tags"><span>抜け毛 減少</span><span>頭皮 やわらか</span><span>コシUP</span></div>
+            <p class="ba-card__text">シャンプー時の抜け毛が明らかに減少。薬を使わないので副作用の心配がなく、安心して続けられます。</p>
+            <p class="ba-card__note">※個人の感想であり効果を保証するものではありません。</p>
+          </article>
+          <!-- card 3 -->
+          <article class="ba-card">
+            <h3 class="ba-card__title">生え際にハリが戻ってきた</h3>
+            <p class="ba-card__meta">40代 男性 ／ 施術期間 8ヶ月</p>
+            <div class="ba-photos">
+              <div class="ba-photo is-before ph" data-ph="BEFORE"><img src="images/bio/ba3-before.png" alt="施術前（生え際）" onerror="this.remove()"></div>
+              <div class="ba-arrow">→</div>
+              <div class="ba-photo is-after ph" data-ph="AFTER"><img src="images/bio/ba3-after.png" alt="施術後（生え際）" onerror="this.remove()"></div>
+            </div>
+            <div class="ba-tags"><span>生え際 改善</span><span>ボリュームUP</span><span>実感あり</span></div>
+            <p class="ba-card__text">後退が気になっていた生え際に変化が。ここまで変わるとは思っていませんでした。</p>
+            <p class="ba-card__note">※個人の感想であり効果を保証するものではありません。</p>
+          </article>
+          <!-- card 4 -->
+          <article class="ba-card">
+            <h3 class="ba-card__title">諦めていた分け目が気にならなく！</h3>
+            <p class="ba-card__meta">50代 女性 ／ 施術期間 4ヶ月</p>
+            <div class="ba-photos">
+              <div class="ba-photo is-before ph" data-ph="BEFORE"><img src="images/bio/ba4-before.png" alt="施術前" onerror="this.remove()"></div>
+              <div class="ba-arrow">→</div>
+              <div class="ba-photo is-after ph" data-ph="AFTER"><img src="images/bio/ba4-after.png" alt="施術後" onerror="this.remove()"></div>
+            </div>
+            <div class="ba-tags"><span>分け目 目立たず</span><span>抜け毛 減少</span><span>ツヤUP</span></div>
+            <p class="ba-card__text">濡れると地肌が目立つのが悩みでしたが、鏡を見るのが嫌じゃなくなりました。</p>
+            <p class="ba-card__note">※個人の感想であり効果を保証するものではありません。</p>
+          </article>
+          <!-- card 5 -->
+          <article class="ba-card">
+            <h3 class="ba-card__title">家族に「増えた?」と言われました</h3>
+            <p class="ba-card__meta">50代 女性 ／ 施術期間 6ヶ月</p>
+            <div class="ba-photos">
+              <div class="ba-photo is-before ph" data-ph="BEFORE"><img src="images/bio/ba5-before.png" alt="施術前" onerror="this.remove()"></div>
+              <div class="ba-arrow">→</div>
+              <div class="ba-photo is-after ph" data-ph="AFTER"><img src="images/bio/ba5-after.png" alt="施術後" onerror="this.remove()"></div>
+            </div>
+            <div class="ba-tags"><span>ボリュームUP</span><span>頭頂部 変化</span><span>自信回復</span></div>
+            <p class="ba-card__text">自分では気づきにくいですが、家族から言われて嬉しかったです。毎回の頭皮チェックが楽しみです。</p>
+            <p class="ba-card__note">※個人の感想であり効果を保証するものではありません。</p>
+          </article>
+          <!-- card 6 -->
+          <article class="ba-card">
+            <h3 class="ba-card__title">頭頂部にボリュームが戻った</h3>
+            <p class="ba-card__meta">50代 女性 ／ 施術期間 8ヶ月</p>
+            <div class="ba-photos">
+              <div class="ba-photo is-before ph" data-ph="BEFORE"><img src="images/bio/ba6-before.png" alt="施術前（頭頂部）" onerror="this.remove()"></div>
+              <div class="ba-arrow">→</div>
+              <div class="ba-photo is-after ph" data-ph="AFTER"><img src="images/bio/ba6-after.png" alt="施術後（頭頂部）" onerror="this.remove()"></div>
+            </div>
+            <div class="ba-tags"><span>ハリ・コシ</span><span>分け目 改善</span><span>若見え</span></div>
+            <p class="ba-card__text">年齢的に諦めていましたが、頭頂部にハリとボリュームが。もっと早く始めればよかったです。</p>
+            <p class="ba-card__note">※個人の感想であり効果を保証するものではありません。</p>
+          </article>
+        </div>
+        <p class="ba-foot-note">※効果には個人差がございます。生活習慣や体質により変化の度合いは異なります。</p>
+      </div>
+    </section>
+
+    <!-- ======================= CTA (24時間受付) ======================= -->
+    <section class="section bg-navy">
+      <div class="container cta-block">
+        <span class="cta-pill">ご予約はLINEから 24時間受付</span>
+        <h2 class="cta-block__title">LINEで30秒カンタン予約</h2>
+        <p class="cta-block__sub">このページ限定・初回2,980円（税込）</p>
+        <a class="btn-line js-line" href="#">LINEで予約する <span class="arw">›</span></a>
+      </div>
+    </section>
+
+    <!-- ======================= なぜ2,980円 ======================= -->
+    <section class="section bg-cream">
+      <div class="container">
+        <h2 class="sec-title">なぜ初回体験を<br><span class="gold">2,980円</span>にしているのか？</h2>
+        <hr class="gold-line">
+        <p class="para center" style="font-weight:700;color:var(--ink);margin-bottom:22px;">いきなり育毛の施術を受けに行くのは、<br>勇気がいる事だと思います。</p>
+        <ul class="check-list">
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>どんな先生が担当してくれるの？</li>
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>自分の薄毛の状態で行っていいの？</li>
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>自分に合うか、まずは試してみたい</li>
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>具体的にどんな育毛施術なの？</li>
+        </ul>
+        <p class="para" style="margin-top:22px;">こうした不安を解消していただく為に、初回体験をご用意しています。ただ今、ご予約が多数のため<span class="em">人数限定</span>のご案内です。ご希望の方はお早めにご連絡をお願いいたします。</p>
+        <span class="limit-badge">毎月 先着5名様 限定</span>
+      </div>
+    </section>
+
+    <!-- ======================= 条件 ======================= -->
+    <section class="section bg-white">
+      <div class="container">
+        <h2 class="sec-title">当院の育毛をお受け<br>いただくにあたり、<br><span class="gold">1つだけ条件</span>があります。</h2>
+        <hr class="gold-line">
+        <div class="frame-box">
+          薬に頼らず<br>髪の“土台”から<br>
+          <span class="hl">本気で改善したい</span>
+          と思っている方
+        </div>
+        <p class="para center" style="margin-top:24px;font-weight:700;color:var(--ink);">そんなあなたは<br>そのまま読み進めてください！</p>
+      </div>
+    </section>
+
+    <!-- ======================= 育毛の方法（前置き） ======================= -->
+    <section class="section bg-cream">
+      <div class="container">
+        <p class="para">ひとくちに「育毛」と言っても、いろいろな方法があります。</p>
+        <p class="para">もしあなたが、<br>・とにかく今だけ隠せればいい<br>・育毛剤を塗るだけで済ませたい<br>とお考えであれば、残念ながら私たちはお力になれないかもしれません。</p>
+        <p class="para">なぜなら、その場しのぎのケアは一時的にごまかしているだけで、やめれば元に戻ってしまうからです。</p>
+        <p class="para">しかし、あなたが抜け毛の根本原因を整えて、薬に頼らず、髪が育ち続ける土台を手に入れたいのであれば──このページはあなたにとって、今後を変えるキッカケになるかもしれません。</p>
+        <p class="para center" style="margin-top:20px;font-weight:700;color:var(--ink);">まずは薄毛の“本当の原因”から<br>お話しします。</p>
+      </div>
+    </section>
+
+    <!-- ======================= WHY 薄毛の原因 ======================= -->
+    <section class="section bg-white">
+      <div class="container">
+        <p class="eyebrow">WHY</p>
+        <h2 class="sec-title">そもそも、<br>薄毛の原因とは？</h2>
+        <hr class="gold-line">
+        <p class="sec-lead">薄毛の原因は、ひとつじゃありません</p>
+
+        <div class="num-list">
+          <article class="num-card">
+            <div class="num-card__head"><span class="num-card__no">1</span><b>血行不良</b></div>
+            <div class="num-card__body"><img class="ico" src="images/bio/cause1.png" alt="血行不良 アイコン" onerror="this.style.display='none'"><p>頭皮に栄養が届きにくくなり、毛根が弱ります。</p></div>
+          </article>
+          <article class="num-card">
+            <div class="num-card__head"><span class="num-card__no">2</span><b>自律神経の乱れ</b></div>
+            <div class="num-card__body"><img class="ico" src="images/bio/cause2.png" alt="自律神経の乱れ アイコン" onerror="this.style.display='none'"><p>ストレスや生活習慣で、めぐりの土台が崩れます。</p></div>
+          </article>
+          <article class="num-card">
+            <div class="num-card__head"><span class="num-card__no">3</span><b>ホルモンの乱れ</b></div>
+            <div class="num-card__body"><img class="ico" src="images/bio/cause3.png" alt="ホルモンの乱れ アイコン" onerror="this.style.display='none'"><p>髪の成長サイクル（ヘアサイクル）に影響します。</p></div>
+          </article>
+        </div>
+
+        <h3 class="cycle-title">ヘアサイクル（毛周期）の乱れ</h3>
+        <p class="cycle-caption">毛が抜け、また新しい毛が生える</p>
+        <div class="cycle-row">
+          <div class="cycle-cell"><img class="art" src="images/bio/cycle1-growth.png" alt="成長期 アイコン" onerror="this.style.display='none'"><b>成長期</b><span>太く長い髪</span></div>
+          <div class="cycle-arrow">→</div>
+          <div class="cycle-cell"><img class="art" src="images/bio/cycle2-rest.png" alt="休止期 アイコン" onerror="this.style.display='none'"><b>休止期</b><span>成長が止まる</span></div>
+          <div class="cycle-arrow">→</div>
+          <div class="cycle-cell"><img class="art" src="images/bio/cycle3-regress.png" alt="退行期 アイコン" onerror="this.style.display='none'"><b>退行期</b><span>抜けて再生へ</span></div>
+        </div>
+
+        <h3 class="cycle-title">整えると、毛根がよみがえる</h3>
+        <div class="cycle-row duo">
+          <div class="cycle-cell"><img class="art" src="images/bio/hair-before.png" alt="施術前（弱く細い） アイコン" onerror="this.style.display='none'"><b>施術前（弱く細い）</b></div>
+          <div class="cycle-arrow">→</div>
+          <div class="cycle-cell"><img class="art" src="images/bio/hair-after.png" alt="施術後（太く） アイコン" onerror="this.style.display='none'"><b>施術後（太く）</b></div>
+        </div>
+        <p class="cycle-foot">多くの毛根は、まだ“生き残っています”。<br>わずかでも活性化できれば、<br><span class="em">若々しい髪は取り戻せます。</span></p>
+      </div>
+    </section>
+
+    <!-- ======================= 何が違う ======================= -->
+    <section class="section bg-cream">
+      <div class="container">
+        <h2 class="sec-title" style="font-size:clamp(19px,5vw,23px);">本当にこの人たちみたいに、<br>私でも変われるの？<br>他とは一体何が違うの？</h2>
+        <hr class="gold-line">
+        <p class="para">当院では、ただ一時的に隠すだけでなく、薬に頼らず“髪が育つ土台”をつくる<span class="ink">根本改善育毛</span>をコンセプトにしています。</p>
+        <p class="para">一般的なクリニックは「通院中に薬でどれだけ抑えられるか」だけを念頭に置いているため、やめた途端に元へ戻ってしまいがちです。</p>
+        <p class="para">しかし当院では、施術中はもちろん、その後もご自身の力で維持していけるように、頭皮環境と体の内側の両方を整えます。だからこそ<span class="em">「卒業後も調子がいい」</span>という声が続出しているのです。</p>
+        <p class="para" style="margin-top:18px;font-weight:700;color:var(--ink);">他にも…</p>
+        <ul class="check-list" style="margin-top:12px;">
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>大事な予定の前に、髪の印象を変えたい</li>
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>薬の副作用が不安で、使いたくない</li>
+          <li class="check-item"><span class="ck"><svg><use href="#i-check"/></svg></span>人目を気にせず、毎日を思いっきり楽しみたい</li>
+        </ul>
+        <p class="para center" style="margin-top:18px;">以上に1つでも当てはまったら、当院の育毛がきっとお役に立てます。</p>
+      </div>
+    </section>
+
+    <!-- ======================= CTA (年齢は関係ない) ======================= -->
+    <section class="section bg-navy">
+      <div class="container cta-block">
+        <span class="cta-pill">まずは「話を聞くだけ」でもOK</span>
+        <p class="cta-block__sub" style="margin:18px 0 4px;">このページ限定・初回2,980円（税込） 毎月先着5名様</p>
+        <h2 class="cta-block__title" style="margin-top:6px;">薄毛に年齢は関係ありません。</h2>
+        <span class="cta-block__big">始めるのは、早いほど 有利です！</span>
+        <a class="btn-line js-line" href="#">LINEで予約する <span class="arw">›</span></a>
+      </div>
+    </section>
+
+    <!-- ======================= REASON 7つの理由 ======================= -->
+    <section class="section bg-cream">
+      <div class="container">
+        <p class="eyebrow">REASON</p>
+        <h2 class="sec-title">{{CITY}}の育毛整体<br>{{BRAND}}が選ばれる<br><span class="gold">7つの理由</span></h2>
+        <hr class="gold-line">
+
+        <div class="num-list">
+          <article class="num-card">
+            <div class="num-card__head"><span class="num-card__no">1</span><b>国家資格保持者による完全オーダーメイド</b></div>
+            <div class="num-card__body"><img class="ico" src="images/bio/reason1.png" alt="理由1 国家資格保持者による完全オーダーメイド アイコン" onerror="this.style.display='none'"><p>薄毛の原因は一人ひとり違います。体質・タイプに合わせて施術内容を組み立て、あなただけの育毛プログラムをご提案します。</p></div>
+          </article>
+          <article class="num-card">
+            <div class="num-card__head"><span class="num-card__no">2</span><b>施術前にマイクロスコープで原因究明</b></div>
+            <div class="num-card__body"><img class="ico" src="images/bio/reason2.png" alt="理由2 施術前にマイクロスコープで原因究明 アイコン" onerror="this.style.display='none'"><p>まず頭皮・毛根の状態をしっかり確認。今の状態になった原因を明確にしてから、的確なケアを行います。</p></div>
+          </article>
+          <article class="num-card">
+            <div class="num-card__head"><span class="num-card__no">3</span><b>微弱電流で血流を促進</b></div>
+            <div class="num-card__body"><img class="ico" src="images/bio/reason3.png" alt="理由3 微弱電流で血流を促進 アイコン" onerror="this.style.display='none'"><p>微弱な電流で頭皮のコンディションを整え、血流を促進。育毛成分が浸透しやすい状態へ導きます。</p></div>
+          </article>
+          <article class="num-card">
+            <div class="num-card__head"><span class="num-card__no">4</span><b>ヒト幹細胞培養液を頭皮へ導入</b></div>
+            <div class="num-card__body"><img class="ico" src="images/bio/reason4.png" alt="理由4 ヒト幹細胞培養液を頭皮へ導入 アイコン" onerror="this.style.display='none'"><p>高品質の幹細胞培養液を頭皮へ届け、眠っていた毛母細胞にはたらきかけます。「もうダメかも」という方にも新たな可能性を。</p></div>
+          </article>
+          <article class="num-card">
+            <div class="num-card__head"><span class="num-card__no">5</span><b>整体で体の内側（自律神経）を整える</b></div>
+            <div class="num-card__body"><img class="ico" src="images/bio/reason5.png" alt="理由5 整体で体の内側（自律神経）を整える アイコン" onerror="this.style.display='none'"><p>頭皮（外側）だけでなく、血流やホルモンに関わる自律神経（内側）も整体で調整。内×外のダブルアプローチです。</p></div>
+          </article>
+          <article class="num-card">
+            <div class="num-card__head"><span class="num-card__no">6</span><b>続けられる価格と充実サポート</b></div>
+            <div class="num-card__body"><img class="ico" src="images/bio/reason6.png" alt="理由6 続けられる価格と充実サポート アイコン" onerror="this.style.display='none'"><p>一般的な薄毛治療は100万円以上かかることも。当院は続けられる価格設定に加え、LINEでいつでもご相談いただけます。</p></div>
+          </article>
+          <article class="num-card">
+            <div class="num-card__head"><span class="num-card__no">7</span><b>マンツーマンで最初から最後まで</b></div>
+            <div class="num-card__body"><img class="ico" src="images/bio/reason7.png" alt="理由7 マンツーマンで最初から最後まで アイコン" onerror="this.style.display='none'"><p>毎回担当が変わることはありません。資格保持者があなたの髪と最初から最後まで責任を持って向き合います。</p></div>
+          </article>
+        </div>
+
+        <!-- comparison -->
+        <div class="compare">
+          <img class="compare__img" src="images/bio/price-compare.png" alt="費用と通院期間の比較（A社クリニック・B社サロン・当院）" onerror="this.style.display='none'">
+          <p class="compare__foot">期間も価格も必要な分だけ！</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= MESSAGE 代表の想い ======================= -->
+    <section class="section bg-white">
+      <div class="container">
+        <p class="eyebrow">MESSAGE</p>
+        <h2 class="sec-title">代表の想い</h2>
+        <hr class="gold-line">
+        <div class="msg-photo ph" data-ph="代表・スタッフの写真">
+          <img src="images/bio/message.png" alt="ビオグループ総院長 小泉" onerror="this.remove()">
+        </div>
+        <p class="msg-quote">「ビオに通って“人生が変わった”」<br>これが私の目指す治療院の形です。</p>
+        <p class="para">はじめまして。ビオグループ総院長の小泉と申します。私はもともと、痛みや不調の改善に特化した施術を行なっておりました。</p>
+        <p class="para">その中で、来院される多くの方が、痛みだけでなく冷えや肌荒れ、そして<span class="ink">薄毛・抜け毛</span>といった体質の悩みを抱えている現状を目の当たりにしました。</p>
+        <p class="para">原因を調べていくと、多くは<span class="ink">血流・自律神経・栄養の乱れ</span>に行き着きます。私は「健康寿命を延ばしたい」という信念から、体の内側を整える施術を本格的に学んできました。</p>
+        <p class="para">そして、<span class="em">薬に頼らず、髪が育つ土台を整える育毛</span>にたどり着いたのです。何をやっても変わらなかった方の“最後の砦”となれるよう、お一人お一人に真剣に向き合っていきます。</p>
+        <p class="para">もしあなたが、まだ心のどこかで「もう一度、髪に自信を持ちたい」と思っているのであれば、ぜひ勇気を出してお越しください。その勇気を、私が全て受け止めます。</p>
+      </div>
+    </section>
+
+    <!-- ======================= CTA (30秒) ======================= -->
+    <section class="section bg-navy">
+      <div class="container cta-block">
+        <h2 class="cta-block__title" style="margin-top:0;">LINEで30秒カンタン予約</h2>
+        <p class="cta-block__sub">このページ限定・初回2,980円（税込）</p>
+        <a class="btn-line js-line" href="#">LINEで予約する <span class="arw">›</span></a>
+      </div>
+    </section>
+
+    <!-- ======================= FLOW / STEP ======================= -->
+    <section class="section bg-cream">
+      <div class="container">
+        <p class="eyebrow">FLOW</p>
+        <h2 class="sec-title">初回施術の流れ</h2>
+        <hr class="gold-line">
+        <div class="step-list">
+          <div class="step">
+            <div class="step__no"><small>STEP</small><b>1</b></div>
+            <h3 class="step__title">来院〜受付</h3>
+            <p class="step__text">リラックスできるプライベート空間でお迎えします。人目を気にせずご来院いただけます。</p>
+            <div class="step__photo ph" data-ph="受付の写真"><img src="images/bio/step1.png" alt="来院〜受付" onerror="this.remove()"></div>
+          </div>
+          <div class="step">
+            <div class="step__no"><small>STEP</small><b>2</b></div>
+            <h3 class="step__title">カウンセリング</h3>
+            <p class="step__text">お悩みや生活習慣を丁寧にうかがいます。強引な勧誘は一切ありません。</p>
+            <div class="step__photo ph" data-ph="カウンセリングの写真"><img src="images/bio/step2.png" alt="カウンセリング" onerror="this.remove()"></div>
+          </div>
+          <div class="step">
+            <div class="step__no"><small>STEP</small><b>3</b></div>
+            <h3 class="step__title">頭皮検査</h3>
+            <p class="step__text">マイクロスコープで頭皮・毛根の状態を確認し、原因を明確にします。</p>
+            <div class="step__photo ph" data-ph="頭皮検査の写真"><img src="images/bio/step3.png" alt="頭皮検査" onerror="this.remove()"></div>
+          </div>
+          <div class="step">
+            <div class="step__no"><small>STEP</small><b>4</b></div>
+            <h3 class="step__title">微弱電流で頭皮ケア</h3>
+            <p class="step__text">微弱電流で血流を促進し、美容成分が浸透しやすい頭皮環境へ整えます。</p>
+            <div class="step__photo ph" data-ph="頭皮ケアの写真"><img src="images/bio/step4.png" alt="微弱電流で頭皮ケア" onerror="this.remove()"></div>
+          </div>
+          <div class="step">
+            <div class="step__no"><small>STEP</small><b>5</b></div>
+            <h3 class="step__title">ヒト幹細胞培養液の導入</h3>
+            <p class="step__text">頭皮環境を整えたうえで幹細胞培養液を導入し、毛母細胞にアプローチします。</p>
+            <div class="step__photo ph" data-ph="培養液導入の写真"><img src="images/bio/step5.png" alt="ヒト幹細胞培養液の導入" onerror="this.remove()"></div>
+          </div>
+          <div class="step">
+            <div class="step__no"><small>STEP</small><b>6</b></div>
+            <h3 class="step__title">整体＆次回プランのご提案</h3>
+            <p class="step__text">自律神経を整える整体で仕上げ。今後のおすすめプランをご納得いただいてからご案内します。</p>
+          </div>
+        </div>
+        <p class="callout" style="text-align:center;margin-top:28px;">一人ひとり丁寧に施術するため<br><span class="em">毎月 先着5名様 限定</span><br>枠が埋まり次第、受付を締め切ります。</p>
+      </div>
+    </section>
+
+    <!-- ======================= CTA (枠が埋まる前に) ======================= -->
+    <section class="section bg-navy">
+      <div class="container cta-block">
+        <h2 class="cta-block__title" style="margin-top:0;">枠が埋まる前にご予約を</h2>
+        <p class="cta-block__sub">このページ限定・初回2,980円（税込） 毎月先着5名様</p>
+        <a class="btn-line js-line" href="#">LINEで予約する <span class="arw">›</span></a>
+        <p class="cta-block__foot">24時間いつでもLINEで予約できます。</p>
+      </div>
+    </section>
+
+    <!-- ======================= FAQ ======================= -->
+    <section class="section bg-white">
+      <div class="container">
+        <p class="eyebrow">Q &amp; A</p>
+        <h2 class="sec-title">よくあるご質問</h2>
+        <hr class="gold-line">
+        <div class="faq-list">
+          <div class="faq-item">
+            <p class="faq-q"><span class="faq-badge">Q</span>お試しだけでも大丈夫ですか？</p>
+            <p class="faq-a"><span class="faq-badge">A</span>はい、もちろん可能です。無理な勧誘は一切ございませんので、「相談だけ」「お試しだけ」でも安心してご来院ください。</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q"><span class="faq-badge">Q</span>育毛施術に副作用はありますか？</p>
+            <p class="faq-a"><span class="faq-badge">A</span>基本的に副作用はありません。薬を使用しないため体への負担がほとんどなく、安心して受けていただけます。</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q"><span class="faq-badge">Q</span>施術は痛いですか？</p>
+            <p class="faq-a"><span class="faq-badge">A</span>痛みはほとんどございません。リラックスして受けていただける、やさしい施術です。</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q"><span class="faq-badge">Q</span>女性でも受けられますか？</p>
+            <p class="faq-a"><span class="faq-badge">A</span>はい。産後の抜け毛や分け目のお悩みなど、女性のお客様も多数ご来院いただいています。</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q"><span class="faq-badge">Q</span>他院に通っていても受けられますか？</p>
+            <p class="faq-a"><span class="faq-badge">A</span>はい、併用も可能です。カウンセリング時に、これまでの治療内容と当院に期待していることをお伝えいただければ、より適切なご提案ができます。</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q"><span class="faq-badge">Q</span>予約制ですか？</p>
+            <p class="faq-a"><span class="faq-badge">A</span>完全予約制です。ご予約時間ぴったり、もしくは5分前にお越しください。ご予約はLINEから24時間受け付けています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 14店舗 ======================= -->
+    <section class="section bg-cream">
+      <div class="container">
+        <h2 class="sec-title mincho" style="font-size:clamp(20px,5.4vw,25px);">東海地方に14店舗！</h2>
+        <p class="store-sub">他院の詳細はこちら</p>
+        <hr class="gold-line">
+        <div class="store-list">
+          <div class="store"><p class="store__name">ビオ整骨院 春日井院</p><p class="store__info">〒486-0955 愛知県春日井市二子町1丁目5−8<br>TEL：0568-93-6937</p><a class="store__link" href="https://beauty.hotpepper.jp/kr/slnH000661781/" target="_blank" rel="noopener">ご予約・詳細 ›</a></div>
+          <div class="store"><p class="store__name">かなれ接骨院</p><p class="store__info">〒465-0005 愛知県名古屋市名東区香流1丁目825 メゾン神の木 1階<br>TEL：052-768-5581</p><a class="store__link" href="https://beauty.hotpepper.jp/kr/slnH000640557" target="_blank" rel="noopener">ご予約・詳細 ›</a></div>
+          <div class="store"><p class="store__name">ビオ接骨院 小牧院</p><p class="store__info">〒485-0023 愛知県小牧市北外山710-10 さくらビル2FB<br>TEL：0568-50-2174</p><a class="store__link" href="https://beauty.hotpepper.jp/kr/slnH000667172/" target="_blank" rel="noopener">ご予約・詳細 ›</a></div>
+          <div class="store"><p class="store__name">ビオ接骨院 大曽根院</p><p class="store__info">〒462-0825 愛知県名古屋市北区大曽根3丁目1−9 長屋ビル 1階<br>TEL：052-990-4720</p><a class="store__link" href="https://beauty.hotpepper.jp/kr/slnH000707458" target="_blank" rel="noopener">ご予約・詳細 ›</a></div>
+          <div class="store"><p class="store__name">美容整体サロン〜翠〜</p><p class="store__info">〒462-0813 愛知県名古屋市北区山田町3丁目62 朋栄ビル 202号室<br>TEL：052-990-4712</p><a class="store__link" href="https://beauty.hotpepper.jp/kr/slnH000693061/" target="_blank" rel="noopener">ご予約・詳細 ›</a></div>
+          <div class="store"><p class="store__name">ビオ整体院 豊橋院</p><p class="store__info">〒440-0813 愛知県豊橋市舟原町123 SHARES<br>TEL：050-8883-6740</p><a class="store__link" href="https://beauty.hotpepper.jp/kr/slnH000739666/?cstt=3" target="_blank" rel="noopener">ご予約・詳細 ›</a></div>
+          <div class="store"><p class="store__name">ビオ整体院 北名古屋院</p><p class="store__info">〒481-0033 愛知県北名古屋市西之保三町地50<br>TEL：0568-50-2714</p><a class="store__link" href="https://beauty.hotpepper.jp/kr/slnH000743823/" target="_blank" rel="noopener">ご予約・詳細 ›</a></div>
+          <div class="store"><p class="store__name">隠れ家美容整体ビオ 岐阜院</p><p class="store__info">〒500-8818 岐阜県岐阜市梅ケ枝町2丁目17<br>TEL：050-8882-7363</p><a class="store__link" href="https://line.me/R/ti/p/@369bhaib?oat_content=url&ts=10141023" target="_blank" rel="noopener">LINE ›</a></div>
+          <div class="store"><p class="store__name">ビオ整体院 尾張旭院</p><p class="store__info">〒488-0015 愛知県尾張旭市三郷町栄50-2<br>TEL：056-150-2227</p><a class="store__link" href="https://beauty.hotpepper.jp/kr/slnH000767988/" target="_blank" rel="noopener">ご予約・詳細 ›</a></div>
+          <div class="store"><p class="store__name">隠れ家美容整体〜しろ〜</p><p class="store__info">〒463-0011 愛知県名古屋市守山区小幡1丁目18−24 アイリス小幡 203<br>TEL：080-7592-8727</p><a class="store__link" href="https://beauty.hotpepper.jp/kr/slnH000772398/" target="_blank" rel="noopener">ご予約・詳細 ›</a></div>
+          <div class="store"><p class="store__name">ビオ整体院 庄内通院</p><p class="store__info">〒451-0016 愛知県名古屋市西区庄内通4丁目24−6<br>TEL：050-8883-6740</p><a class="store__link" href="https://line.me/R/ti/p/@100ddnpr?oat_content=url&ts=08152225" target="_blank" rel="noopener">LINE ›</a></div>
+          <div class="store"><p class="store__name">ビオ整体院 知立院</p><p class="store__info">〒472-0056 愛知県知立市宝1丁目17−8<br>TEL：050-8883-6740</p><a class="store__link" href="https://line.me/R/ti/p/@257saxfe?oat_content=url&ts=08152224" target="_blank" rel="noopener">LINE ›</a></div>
+          <div class="store"><p class="store__name">ビオ整体院 千代田院</p><p class="store__info">〒460-0012 愛知県名古屋市中区千代田3丁目31-1<br>TEL：080-7592-8027</p><a class="store__link" href="https://line.me/R/ti/p/@369bhaib?oat_content=url&ts=10141023" target="_blank" rel="noopener">LINE ›</a></div>
+          <div class="store"><p class="store__name">COREA整体院</p><p class="store__info">〒511-0017 三重県桑名市今片町18-2<br>TEL：080-7592-8027</p><a class="store__link" href="https://line.me/R/ti/p/@450vzczf?ts=10300946&oat_content=url" target="_blank" rel="noopener">LINE ›</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= LAST MESSAGE ======================= -->
+    <section class="section bg-cream2">
+      <div class="container">
+        <p class="eyebrow">LAST MESSAGE</p>
+        <h2 class="sec-title">最後に</h2>
+        <hr class="gold-line">
+        <p class="para center" style="font-weight:700;color:var(--ink);font-size:clamp(16px,4.4vw,19px);margin-bottom:8px;">あなたには<span style="color:var(--gold)">3つの道</span>があります</p>
+        <div class="paths">
+          <div class="path">
+            <p class="path__no">1つ目</p>
+            <p class="path__text">薄毛の悩みを抱えたまま、何もせずに時間が過ぎていくのを待つだけの道。</p>
+          </div>
+          <p class="path-or">or</p>
+          <div class="path">
+            <p class="path__no">2つ目</p>
+            <p class="path__text">効果の出ない育毛剤や高額な治療を試し続け、貴重なお金と時間を無駄にしていく道。</p>
+          </div>
+          <p class="path-or">or</p>
+          <div class="path is-best">
+            <p class="path__no">3つ目 <span class="path__best">おすすめ</span></p>
+            <p class="path__text">薬に頼らず髪の土台から育てる育毛専門の{{BRAND}}に来院し、鏡を見るのが楽しみになる毎日を手に入れる道。</p>
+          </div>
+        </div>
+        <p class="last-foot">
+          どの道を選ぶのも自由です。しかし、よく考えてみてください。<br>一生その悩みを我慢し続ける人生で<br>いいのですか？
+          <span class="strong">迷いなく「NO！」と思えたなら、<br>今すぐご連絡ください。</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================= CTA (このページ限定) ======================= -->
+    <section class="section bg-navy">
+      <div class="container cta-block">
+        <span class="cta-pill">＼ このページ限定 ／</span>
+        <h2 class="cta-block__title">初回2,980円で今すぐ予約</h2>
+        <p class="cta-block__sub">カウンセリング＋頭皮診断＋育毛施術ぜんぶ込み 毎月先着5名様</p>
+        <a class="btn-line js-line" href="#">LINEで予約する <span class="arw">›</span></a>
+      </div>
+    </section>
+
+    <!-- ======================= ACCESS ======================= -->
+    <section class="section bg-cream">
+      <div class="container">
+        <p class="eyebrow">ACCESS</p>
+        <h2 class="sec-title">アクセス・店舗情報</h2>
+        <hr class="gold-line">
+        <div class="map">
+          <iframe src="https://maps.google.com/maps?q={{MAP_ADDRESS}}&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="{{CLINIC_NAME}}の地図"></iframe>
+        </div>
+        <table class="info-table">
+          <tr><th>院名</th><td>{{CLINIC_NAME}}（育毛治療院）</td></tr>
+          <tr><th>住所</th><td>{{ADDRESS}}</td></tr>
+          <tr><th>交通</th><td>{{ACCESS}}</td></tr>
+          <tr><th>営業時間</th><td>{{HOURS}}</td></tr>
+          <tr><th>定休日</th><td>{{CLOSED}}</td></tr>
+          <tr><th>駐車場</th><td>{{PARKING}}</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- ======================= Footer ======================= -->
+    <footer class="site-footer">
+      <p class="site-footer__name">{{CLINIC_NAME}}（育毛治療院）</p>
+      <p class="site-footer__tag">薬に頼らない、新しい育毛のかたち。</p>
+      <p class="site-footer__copy">© {{BRAND}} / 株式会社Body Education</p>
+    </footer>
+
+  </div><!-- /.page -->
+
+  <!-- ======================= Sticky bottom CTA ======================= -->
+  <div class="sticky-cta">
+    <div class="sticky-cta__price">このページ限定・初回<b>2,980円<small style="font-size:11px;font-weight:400">（税込）</small></b></div>
+    <a class="btn-line js-line" href="#">LINEで予約 <span class="arw">›</span></a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
