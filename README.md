@@ -40,6 +40,7 @@
 | `{{CLOSED}}` | 定休日 | 日曜日（水曜・金曜は午後休診） | 水曜日 |
 | `{{PARKING}}` | 駐車場（テーブル表示用） | 1台 | 2台完備 |
 | `{{LINE_URL}}` | LINE予約URL（`js/script.js` 内） | https://line.me/R/ti/p/@729eivtp?... | （各院のLINE URL） |
+| `{{HPB_URL}}` | ホットペッパー予約URL（予約ボタンのリンク先・全6箇所） | https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000776967&couponId=…&add=0 | 各院の予約URL |
 
 > 時間の区切りはページの表記に合わせて `–`（enダッシュ）を使っています。`/` は全角 `／`。
 

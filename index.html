@@ -38,7 +38,7 @@
   <!-- LINE予約ボタンのクリックを Lead（コンバージョン）として計測 -->
   <script>
   document.addEventListener('click', function (e) {
-    var el = e.target && e.target.closest ? e.target.closest('.js-line') : null;
+    var el = e.target && e.target.closest ? e.target.closest('.js-line, .js-hpb') : null;
     if (el && window.fbq) { fbq('track', 'Lead'); }
   });
   </script>
@@ -112,6 +112,7 @@
 
         <p class="tap-hint">↓ タップで予約できます ↓</p>
         <a class="btn-line js-line" href="#">LINEで予約する <span class="arw">›</span></a>
+        <a class="btn-hpb js-hpb" href="{{HPB_URL}}" target="_blank" rel="noopener">ホットペッパービューティーで予約する <span class="arw">›</span></a>
       </div>
     </section>
 
@@ -272,6 +273,7 @@
         <h2 class="cta-block__title">LINEで30秒カンタン予約</h2>
         <p class="cta-block__sub">このページ限定・初回2,980円（税込）</p>
         <a class="btn-line js-line" href="#">LINEで予約する <span class="arw">›</span></a>
+        <a class="btn-hpb js-hpb" href="{{HPB_URL}}" target="_blank" rel="noopener">ホットペッパービューティーで予約する <span class="arw">›</span></a>
       </div>
     </section>
 
@@ -386,6 +388,7 @@
         <h2 class="cta-block__title" style="margin-top:6px;">薄毛に年齢は関係ありません。</h2>
         <span class="cta-block__big">始めるのは、早いほど 有利です！</span>
         <a class="btn-line js-line" href="#">LINEで予約する <span class="arw">›</span></a>
+        <a class="btn-hpb js-hpb" href="{{HPB_URL}}" target="_blank" rel="noopener">ホットペッパービューティーで予約する <span class="arw">›</span></a>
       </div>
     </section>
 
@@ -459,6 +462,7 @@
         <h2 class="cta-block__title" style="margin-top:0;">LINEで30秒カンタン予約</h2>
         <p class="cta-block__sub">このページ限定・初回2,980円（税込）</p>
         <a class="btn-line js-line" href="#">LINEで予約する <span class="arw">›</span></a>
+        <a class="btn-hpb js-hpb" href="{{HPB_URL}}" target="_blank" rel="noopener">ホットペッパービューティーで予約する <span class="arw">›</span></a>
       </div>
     </section>
 
@@ -515,6 +519,7 @@
         <h2 class="cta-block__title" style="margin-top:0;">枠が埋まる前にご予約を</h2>
         <p class="cta-block__sub">このページ限定・初回2,980円（税込） 毎月先着5名様</p>
         <a class="btn-line js-line" href="#">LINEで予約する <span class="arw">›</span></a>
+        <a class="btn-hpb js-hpb" href="{{HPB_URL}}" target="_blank" rel="noopener">ホットペッパービューティーで予約する <span class="arw">›</span></a>
         <p class="cta-block__foot">24時間いつでもLINEで予約できます。</p>
       </div>
     </section>
@@ -616,6 +621,7 @@
         <h2 class="cta-block__title">初回2,980円で今すぐ予約</h2>
         <p class="cta-block__sub">カウンセリング＋頭皮診断＋育毛施術ぜんぶ込み 毎月先着5名様</p>
         <a class="btn-line js-line" href="#">LINEで予約する <span class="arw">›</span></a>
+        <a class="btn-hpb js-hpb" href="{{HPB_URL}}" target="_blank" rel="noopener">ホットペッパービューティーで予約する <span class="arw">›</span></a>
       </div>
     </section>
 
